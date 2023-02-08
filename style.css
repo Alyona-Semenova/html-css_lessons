@@ -1,16 +1,16 @@
-html {
-    font-family: sans-serif;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-p {
-    font-size: 16px;
-    line-height: 26px;
-    color: #1F3F68;
+html {
+    font-family: sans-serif;
 }
 
 h1 {
     font-size: 64px;
     color: #1F3F68;
+    width: 510px;
 }
 
 h2 {
@@ -30,6 +30,12 @@ h4 {
     color: #1F3F68;
 }
 
+p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
 input,
 textarea {
     border: 1px solid #356EAD;
@@ -37,6 +43,53 @@ textarea {
     border-radius: 10px;
     opacity: 0.4;
 }
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.item-card {
+    width: 359px;
+}
+
+.what-we-do__body {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section {
+    width: 495px;
+}
+
+.section-contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__heading {
+    width: 340px;
+}
+
+.footer__contacts {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Yandex Map */
+
+iframe {
+    width: 100%;
+}
+
+/*--------------*/
+
 
 .form-btn {
     background: #5A98D0;
