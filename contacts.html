@@ -12,46 +12,58 @@
 <body>
     <div class="wrapper">
         <div class="container">
-
             <div class="header">
-                <a href="index.html">Главная</a>
-                <a href="contacts.html">Контакты</a>
+                <a href="index.html"><img src="img/logo.svg" alt="Главная"></a>
+                <a href="contacts.html"><img src="img/contacts.svg" alt=""></a>
             </div>
+        </div>
 
-            <div class="contact-us">
-                <h2>Contact Us</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, corrupti.</p>
-            </div>
 
+        <div class="contact-us">
+            <h2 class="contact-us__heading">Contact Us</h2>
+            <p class="contact-us__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+
+        <div class="container">
 
             <div class="section-contacts">
-                <div class="section-contacts-links">
-                    <img src="img/image.png" alt="cat">
-                    <h4>Address</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    <h4>Phone</h4>
-                    <ul>
-                        <li> <a href="tel:+72345678989"></a>+7 (234) 567 89 89</li>
-                        <li> <a href="tel:+79568653636"></a>+7 (956) 865 36 36</li>
+
+                <div class="section-contacts__info">
+                    <img class="section-contacts__image" src="img/Contact-image.png" alt="cat">
+                    <h4 class="section-contacts__heading">ADDRESS</h4>
+                    <p class="section-contacts__text section-contacts__text-width gray-text">Id convallis placerat sit
+                        sed duis id amet volutpat quam a, pharetra.</p>
+                    <h4 class="section-contacts__heading">PHONE</h4>
+                    <ul class="section-contacts__text">
+                        <li> <img class="section-contacts__icon" src="img/phone_24px.svg" alt=""> <a class="gray-text"
+                                href="tel:+72345678989">+7 (234) 567 89 89</a></li>
+                        <li> <img class="section-contacts__icon" src="img/phone_24px.svg" alt=""> <a class="gray-text"
+                                href="tel:+79568653636">+7 (956) 865 36 36</a></li>
                     </ul>
-                    <h4>Online service</h4>
-                    <ul>
-                        <li> <a href="http://randompage.ru/">random site</a> </li>
-                        <li> <a href="mailto:mail_gmail@yandex.com">mail_gmail@yandex.com</a> </li>
+                    <h4 class="section-contacts__heading">ONLINE SERVICE</h4>
+                    <ul class="section-contacts__text">
+                        <li> <img class="section-contacts__icon" src="img/language_24px.svg" alt=""> <a
+                                class="gray-text" href="http://randompage.ru/">random site</a> </li>
+                        <li> <img class="section-contacts__icon" src="img/email_24px.svg" alt=""> <a class="gray-text"
+                                href="mailto:mail_gmail@yandex.com">mail_gmail@yandex.com</a> </li>
                     </ul>
-                    <h4>Send us message</h4>
+
                 </div>
 
-                <div class="feedback-form">
-                    <form action="#">
-                        Full Name <input type="text" placeholder="">
-                        <br />
-                        Email <input type="email" placeholder="mail@mail.ru">
-                        <br />
-                        Message
-                        <br /><textarea cols="30" rows="10"></textarea> <br />
-                        <button class="form-btn" type="submit">submit</button>
-                    </form>
+                <div class="section-contacts__feedback-form feedback-form">
+                    <div class="feedback-form__content-container">
+                        <form action="#">
+                            <h4 class="section-contacts__heading">SEND US MESSAGE</h4>
+                            <p class="input__heading">Full Name</p>  <input type="text" placeholder="Your Name">
+                            
+                            <p class="input__heading">Email</p> <input type="email" placeholder="Your Email">
+                            
+                            <p class="input__heading">Message</p>
+                            <textarea cols="30" rows="10" placeholder="Your Message"></textarea> 
+                            <button class="form-btn" type="submit">submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
 
@@ -59,36 +71,46 @@
                 src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A51cfc94027c66656754e4a5faaf954ce378005d065270322b342a702710fef94&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
             </script>
 
-            <!-- FOOTER -->
-            <div class="footer">
+        </div>
 
-                <div class="section">
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Explicabo, repellat.
+        <!-- FOOTER -->
+
+
+        <div class="footer">
+            <div class="container footer__container">
+
+                <div class="footer__info">
+
+                    <h3 class="footer__heading">Intersted to woek
+                        with our team?</h3>
+                    <p class="footer__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam.
                     </p>
+
                 </div>
-                <div class="footer__separator">
-                    <hr />
-                </div>
-                <div class="section">
-                    <div class="footer__contacts">
-                        <ol>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li><a href="tel:+76589653232"></a> +7 (658) 965 32 32</li>
-                            <li>
-                                <a href="mailto:mail_gmail@yandex.com">mail_gmail@yandex.com</a>
-                            </li>
-                        </ol>
-                        <div class="copy">
-                            <p>Все права защищены &copy;</p>
-                        </div>
-                    </div>
+                <a href="#" class="footer__button">Let's talk</a>
+
+
+
+            </div>
+
+            <hr class="footer__separator" />
+            <div class="container">
+                <ol class="footer__contacts">
+                    <li> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    <li><a href="tel:+781273134321"></a> +7-812-7313-4321</li>
+                    <li>
+                        <a class="footer__email" href="mailto:hello.site@gmail.com">mhello.site@gmail.com</a>
+                    </li>
+                </ol>
+                <div class="copy">
+                    <p>2021 All rights reserved.</p>
                 </div>
             </div>
-            <!-- FOOTER END-->
         </div>
+
     </div>
 </body>
 
